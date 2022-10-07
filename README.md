@@ -39,7 +39,10 @@ The dataset is organized as follows:
         
 Some examples of terrain dataset are as follows:
 
-![Mars]()
+![Mars1]("https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars1.png")
+![Mars2]("https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars2.png")
+![Moon1]("https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon1.png")
+![Moon2]("https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon2.png")
 
 # How to make the dataset?
 This dataset is made by Unity3D, which is a popular game engine and is widely used in game development, art, design, architecture and so on.
