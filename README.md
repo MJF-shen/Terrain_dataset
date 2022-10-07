@@ -1,11 +1,45 @@
 # Terrain dataset
-This is a simulated terrain dataset made by Unity3D used for self-supervised monocular depth estimation, which contains a set of monocular image sequences of Mars and Moon scenes. 
+This is a simulated terrain dataset made by Unity3D used for self-supervised monocular depth estimation, which contains a set of monocular image sequences of Mars and Moon scenes.
 
 This dataset aims to modeling the monocular image sequences of planet's surface captured by aircrafts during plantary landing and exploration tasks.
 
 It contains 29 monocular image sequences for a total of 12229 images(the Mars and Moon are 7685 and 4544, respectively) for training.
 
 Validation and test set are consists of 1023 and 854 images with corresponding depth maps, respectively.
+
+The dataset is organized as follows:
+
+    terrain
+      -Training
+        --scene1(Mars)
+          ---*.jpg(list of color(rgb) images)
+          ---cam.txt(3x3 camera intrinsic matrix)
+          ---depth
+            ----*.npy(dense depth data, only in validation set)
+          ---depth_img
+            ----*.png(depth map, visulization for depth data)
+        --scene2(Mars)
+        ....
+        --moon1(Moon)
+        --moon2(Moon)
+        ....
+        train.txt(containing scene names for training)
+        val.txt(containing scene names for validation)
+      -Testing
+        --mars(Mars)
+          ---color
+            ----*.jpg(list of color(rgb) images)
+          ---depth
+            ----*.npy(dense depth data)
+          ---depth_img
+            ----*.png(depth map, visulization for depth data)
+          ---cam.txt(3x3 camera intrinsic matrix)
+        --moon(Moon)
+        --both(Mars and Moon)
+        
+Some examples of terrain dataset are as follows:
+
+![Mars]()
 
 # How to make the dataset?
 This dataset is made by Unity3D, which is a popular game engine and is widely used in game development, art, design, architecture and so on.
