@@ -176,4 +176,20 @@ Thus, we achieve the goal of obtaining per-pixel depth groundtruth of each color
 
 # Experiment results
 
+To demonstrate the effectiveness of our dataset to train a self-supervised monocular depth estimation model, we select SC-Depth(IJCV2021) as our baseline to train a monocular depth estimation model using the proposed dataset and the resulting model is used to test on our test set.
+
+As with previous work, we apply a single median scaling to the whole test set due to monocular scale ambiguity and compute monocular depth estimation evaluation metrics.
+
+The qualitative and quantitative results are as follows:
+
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/result1.png" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/result2.png" ></center></td>
+    </tr>
+</table>
+
+|  Model   | Abs Diff| Abs Rel | Sq Rel | Log10 | RMSE  | RMSE(log) | Acc.1 | Acc.2 | Acc.3 |
+|:--------:|:-------:|:-------:|:------:|:-----:|:-----:|:---------:|:-----:|:-----:|:-----:|
+| SC-Depth | 2.885   | 0.016   | 0.076  | 0.007 | 3.693 | 0.020     | 1.000 | 1.000 | 1.000 |
 
