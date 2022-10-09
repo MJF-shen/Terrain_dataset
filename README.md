@@ -1,7 +1,7 @@
 # Terrain dataset
 This is a **simulated** terrain dataset made by **Unity3D** used for **self-supervised monocular depth estimation**, which contains a set of monocular image sequences of Mars and Moon scenes.
 
-This dataset aims to simulate the monocular image sequences of planet surface captured by aircrafts during planetary landing or exploration misson.
+The images in this dataset are taken from the **top view**, aiming to simulate the monocular image sequences of planet surface captured by aircrafts during planetary landing or exploration misson.
 
 It contains **29** monocular image sequences for a total of **12229** images(the Mars and Moon are 7685 and 4544, respectively) for training.
 
@@ -9,11 +9,11 @@ Validation and test set consists of **1023** and **854** images with correspondi
 
 The distribution of this dataset is shown in the following table:
 
-|Mars|Moon
--|-|-
-training set|7685|4544
-validation set|620|403
-test set|301|453
+| | Mars | Moon |
+| :------: | :------: | :------: |
+|__training set__|7685|4544|
+|__validation set__|620|403|
+|__test set__|301|453|
 
 The dataset is organized as follows:
 
