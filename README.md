@@ -52,7 +52,7 @@ Some examples of this dataset are as follows:
 <table>
     <tr>
         <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars1.jpg" ></center></td>
-        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars_2.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars2.jpg" ></center></td>
         <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars3.jpg" ></center></td>
     </tr>
 </table>
