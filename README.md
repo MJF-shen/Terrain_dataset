@@ -154,7 +154,9 @@ $$
 
 Here, f represents the focal length, $s_w$ and $s_h$ represent the width and height of the sensor(mm) respectively, w and h represent the width and height of the image(pixel). The offset of the camera is set to zero, so that the main point of image is exactly in the image center, thus $c_x$ and $c_y$ are equal to half of the width and height of image respectively.
 
-![Camera](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/camera.png "Physical camera")
+<div align=center>
+<img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/camera.png">
+<br>Physical camera</div>
 
 In order to acquire current scene data, the **Texture2D class** is adopted to capture the current scene observed by game camera. Then, the data is encoded into picture format(JPG, PNG) for output, thus obtaing color images of current scene.
 
