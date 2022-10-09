@@ -49,13 +49,23 @@ Some examples of this dataset are as follows:
 
 - Mars
 
-![Mars1](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars1.png "Mars1")
-![Mars2](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars2.png "Mars2")
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars1.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars2.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/mars3.jpg" ></center></td>
+    </tr>
+</table>
 
 - Moon
 
-![Moon1](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon1.png "Moon1")
-![Moon2](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon2.png "Moon2")
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/moon1.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/moon2.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/moon3.jpg" ></center></td>
+    </tr>
+</table>
 
 # How to make the dataset?
 ## Unity3D
