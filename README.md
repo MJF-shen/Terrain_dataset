@@ -162,10 +162,18 @@ Here, f represents the focal length, $s_w$ and $s_h$ represent the width and hei
 
 In order to acquire current scene data, the **Texture2D class** is adopted to capture the current scene observed by game camera. Then, the data is encoded into picture format(JPG, PNG) for output, thus obtaing color images of current scene.
 
-### Dense depth groundtruth
+### Per-pixel depth groundtruth
 
-In order to quantitatively evaluate the depth estimation results, it is necessary to obtain the dense depth groundtruth.
+In order to quantitatively evaluate the depth estimation results, it is necessary to obtain the per-pixel depth groundtruth.
 
 In Unity3D, we cannot directly obtain the distance from the object to the camera plane, but the **collision detection model** provided can indirectly achieve this goal.
 
 Emit a ray from the camera to the specified position(pixel position) on the screen, the collision detection function is adopted to obtain the world coordinate of the collision point(point on the object), which is transformed to the camera coordinate system. Thus, the Z compoment of the transformed coordinate is the distance from the point to the camera plane, that is, the depth value.
+
+After an RGB image is taken, per-pixel depth value of it was obtained through collision detcetion.
+The depth data is first saved as txt file, and then is converted to npy file and corresponding depth map through python script.
+Thus, we achieve the goal of obtaining per-pixel depth groundtruth of each color image.
+
+# Experiment results
+
+
