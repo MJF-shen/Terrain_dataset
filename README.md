@@ -109,7 +109,7 @@ Emit a ray from the camera to the specified position(pixel position) on the scre
 
 ### Process
 
-The camera is controlled to do landing and orbiting movement during which a set of monocular image sequences are captured.
+For training set, the camera is controlled to do landing and orbiting movement during which a set of monocular image sequences are captured.
 
 The collision detection function in Unity3D is adopted to obtain the dense depth data of current scene.
 
