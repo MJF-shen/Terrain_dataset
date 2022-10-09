@@ -104,7 +104,7 @@ In specific, we export 3D model of Mars and Moon, as shown in the figure below, 
 
 And we write C# scripts to control the motion and shot of the game camera. 
 
-**The [scripts](https://github.com/MJF-shen/Terrain_dataset/blob/main/C# script) we write is available in this project.**
+**The [scripts](https://github.com/MJF-shen/Terrain_dataset/tree/main/C%23%20script) we write is available in this project.**
 
 For training set, the camera is controlled to do landing and orbiting motion during which a set of monocular image sequences are captured.
 
