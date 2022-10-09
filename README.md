@@ -189,6 +189,8 @@ The qualitative and quantitative results are as follows:
     </tr>
 </table>
 
+From left to right: **RGB image**, **GroundTruth**, **Predicted**, **GT 3D point cloud**, **Predicted 3D point cloud**
+
 |  Model   | Abs Diff| Abs Rel | Sq Rel | Log10 | RMSE  | RMSE(log) | Acc.1 | Acc.2 | Acc.3 |
 |:--------:|:-------:|:-------:|:------:|:-----:|:-----:|:---------:|:-----:|:-----:|:-----:|
 | SC-Depth | 2.885   | 0.016   | 0.076  | 0.007 | 3.693 | 0.020     | 1.000 | 1.000 | 1.000 |
