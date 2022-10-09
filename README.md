@@ -60,7 +60,7 @@ You can create a **game camera** in Unity. The camera is designed to imitate the
 
 Unity3D also integrates the **C# library**, which includes lots of library funcitons. You can write **C# scripts** to achieve different functions. The script must **be bound to a certain game object** to execute corresponding function.
 
-## Process
+## Implement details
 
 In specific, we export 3D model of Mars and Moon to Unity3D and write C# scripts to control the movement and shot of the game camera.
 
@@ -74,7 +74,40 @@ The translation component along the coordinate axis is set through ***transform.
 
 Many types of camera are available in Unity3D. We select the **physical camera**, as shown in the figure below.
 
-![Moon1](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon1.png "Moon1")
+This camera is a **pinhole camera**, and its field of view is depend on the focal length, sensor size and offset.
+
+Through these physical parameters and the width and height of the image, the camera **intrinsic matrix K** can be calculated as follows:
+
+$$
+K = 
+\left[
+\begin{matrix}
+f_x & 0 & c_x \\
+0 & f_y & c_y \\
+0 & 0 & 1 \\
+\end{matrix}
+\right],
+f_x=f\frac{w}{s_w}, 
+f_y=f\frac{h}{s_h}, 
+c_x=\frac{w}{2}, 
+c_y=\frac{h}{2}
+$$
+
+Here, f represents the focal length, $s_w$ and $s_h$ represent the width and height of the sensor(mm) respectively, w and h represent the width and height of the image(pixel). The offset of the camera is set to zero, so that the main point of image is exactly in the image center, thus $c_x$ and $c_y$ are equal to half of the width and height of image respectively.
+
+![Camera](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/camera.png "Physical camera")
+
+In order to acquire current scene data, the **Texture2D class** is adopted to capture the current scene observed by game camera. Then, the data is encoded into picture format(JPG, PNG) for output, thus obtaing color images of current scene.
+
+### Dense depth data
+
+In order to quantitatively evaluate the depth estimation results, it is necessary to obtain the dense depth groundtruth.
+
+In Unity3D, we cannot directly obtain the distance from the object to the camera plane., but the **collision detection model** provided can indirectly achieve this goal.
+
+Emit a ray from the camera to the specified position(pixel position) on the screen, the collision detection function is adopted to obtain the world coordinate of the collision point(point on the object), which is transformed to the camera coordinate system. Thus, the Z compoment of the transformed coordinate is the distance from the point to the camera plane, that is, the depth value.
+
+### Process
 
 The camera is controlled to do landing and orbiting movement during which a set of monocular image sequences are captured.
 
