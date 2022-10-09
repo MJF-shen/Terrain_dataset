@@ -84,21 +84,44 @@ In specific, we export 3D model of Mars and Moon, as shown in the figure below, 
 
 - Mars
 
-![Mars1](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars1.png "Mars1")
-![Mars2](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars2.png "Mars2")
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars1.png" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars2.png" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Mars3.png" ></center></td>
+    </tr>
+</table>
 
 - Moon
 
-![Moon1](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon1.png "Moon1")
-![Moon2](https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon2.png "Moon2")
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon1.png" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon2.png" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/Moon3.png" ></center></td>
+    </tr>
+</table>
 
-And we write C# scripts to control the motion and shot of the game camera. The scripts we write is available in this project.
+And we write C# scripts to control the motion and shot of the game camera. **The scripts we write is available in this project.**
 
 For training set, the camera is controlled to do landing and orbiting motion during which a set of monocular image sequences are captured.
 
 For validation and test set, the collision detection function in Unity3D is adopted to obtain the dense depth value corresponding to color image.
 
 The validation and test set are well designed to include as many scenes as possible, as well as some difficult samples, such as textureless and flat area, in order to comprehensively evaluate the monocluar depth estimation result.
+
+The color images and corresponding depth maps of test set are shown in the figure below. Brighter area in depth map means the farther away from the camera.
+
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/color1.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/depth1.png" ></center></td>
+    </tr>
+    <tr>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/color2.jpg" ></center></td>
+        <td ><center><img src="https://github.com/MJF-shen/Terrain_dataset/blob/main/image/depth2.png" ></center></td>
+    </tr>
+</table>
 
 ### Motion control
 
